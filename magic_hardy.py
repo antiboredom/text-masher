@@ -16,7 +16,7 @@ temp = ""
 for line in sys.stdin:
     temp += line
 
-text = re.split('".+?"', temp)
+text = re.split('".+?"', temp, flags=re.S)
 
 new_text = []
 for index, line in enumerate(text):
